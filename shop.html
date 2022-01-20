@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STARTER - Toybox Homepage</title>
+    <title>Shop Page</title>
     <script src="https://kit.fontawesome.com/f2dd5a1fe8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-
     <div class="announcements">
         <div class="wrapper">
             <p class="smallCopy">Complimentary shipping on orders over $50. Discount applied at checkout.</p>
@@ -69,33 +68,12 @@
         </div> <!-- end of wrapper -->
     </nav>
 
-    <!-- HEADER start -->
-    <header>
-        <div class="headerImgContainer wrapper">
-            <img src="./assets/header-image.jpg" alt="toddler playing with colourful wooden blocks">
-        </div> <!-- end of headerImgContainer wrapper -->
-        <div class="headerContent wrapper">
-            <div class="contentContainer">
-                <h5>Handcrafted for kids</h5>
-                <h3>Go on, led them play with wooden blocks</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus porro delectus praesentium
-                    totam
-                    omnis doloremque eum!</p>
-                <button>Shop All</button>
-            </div> <!-- end of .contentContainer -->
-        </div> <!-- end of headerContent wrapper -->
-    </header>
 
-    <!-- MAIN start -->
-    <main>
-        <!-- popular section -->
-        <section class="popular">
+    <main class="shop">
+        <!-- Product inventory section -->
+        <section class="inventory" id="inventory">
             <div class="wrapper">
-                <div class="titleBar">
-                    <h2>Popular</h2>
-                    <button>Shop All</button>
-                </div> <!-- end of .titleBar -->
-
+                <h2>All Products</h2>
                 <div class="product">
                     <div class="productImgContainer">
                         <a href="#">
@@ -122,56 +100,120 @@
                         </a>
                     </div> <!-- end of third productImgContainer -->
 
+                    <!-- new products -->
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/reef-fish.jpg" alt="Wooden toy reef fish">
+                            <p class="popularProduct">Reef Fish</p>
+                            <p class="price">$49.00USD</p>
+                        </a>
+                    </div> <!-- end of fourth productImgContainer -->
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/spinosaurus.jpg" alt="Wooden spinosaurus toy">
+                            <p class="popularProduct">Spinosaurus</p>
+                            <p class="price">$18.00USD</p>
+                        </a>
+                    </div> <!-- end of fifth productImgContainer -->
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/orca.jpg" alt="Wooden orca toy">
+                            <p class="popularProduct">Orca</p>
+                            <p class="discountedPrice">$18.00USD</p>
+                            <p class="price">$12.00USD</p>
+                        </a>
+                    </div> <!-- end of sixth productImgContainer -->
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/ocean-trio.jpg" alt="Wooden ocean animal toys">
+                            <p class="popularProduct">Ocean Trio</p>
+                            <p class="price">$49.00USD</p>
+                        </a>
+                    </div> <!-- end of seventh productImgContainer -->
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/elephant.jpg" alt="Wooden elephant toy">
+                            <p class="popularProduct">Elephant</p>
+                            <p class="price">$18.00USD</p>
+                        </a>
+                    </div> <!-- end of eighth productImgContainer -->
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/dino-trio.jpg" alt="Wooden dinosaur toys">
+                            <p class="popularProduct">Dino Trio</p>
+                            <p class="discountedPrice">$49.00USD</p>
+                            <p class="price">$45.00USD</p>
+                        </a>
+                    </div> <!-- end of ninth productImgContainer -->
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/crocodile.jpg" alt="Wooden crocodile toy">
+                            <p class="popularProduct">Crocodile</p>
+                            <p class="price">$18.00USD</p>
+                        </a>
+                    </div> <!-- end of tenth productImgContainer -->
+
+                    <div class="productImgContainer">
+                        <a href="#">
+                            <img src="./assets/brontosaurus.jpg" alt="Wooden brontosaurus toy">
+                            <p class="popularProduct">Brontosaurus</p>
+                            <p class="price">$18.00USD</p>
+                        </a>
+                    </div> <!-- end of eleventh productImgContainer -->
+
                 </div> <!-- end of .product -->
-            </div> <!-- end of popular wrapper -->
+            </div> <!-- end of .wrapper -->
         </section>
 
-        <!-- learn/play section -->
-        <section class="play">
-            <div class="wrapper playContainer">
-                <h5>Learning through doing</h5>
-                <h3>Let them play</h3>
-                <p>Bauris eget lacus, amet mollis felis, sed posuere odio. Justo purus orci ultricies et. Sit etiam
-                    porta sed tellus. Cattis pellentesque felis tristique eget purus feugiat massa.</p>
-                <button class="solid">Learn About Us</button>
-            </div> <!-- end of .wrapper .playContainer -->
-        </section>
-
-        <!-- categories section -->
-        <section class="categories">
+        <!-- customer guarantees section -->
+        <section class="guarantees" id="guarantees">
             <div class="wrapper">
-                <h2>Categories</h2>
-                <p>Explore our range of hand-made toys</p>
+                <h5>Our Customer Guarantees</h5>
 
-                <div class="categoryGallery">
-                    <a href="#" class="items orange">
-                        <img src="./assets/safari-trio.jpg" alt="Wooden safari animal toys">
-                        <h4>Safari</h4>
-                        <p>Land-dwelling African favourites</p>
-                    </a>
+                <!-- container for guarantees -->
+                <div class="shopOptions">
+                    <div class="guaranteeContainer">
+                        <div class="imgContainer">
+                            <img src="./assets/dolly.svg" alt="A shipping dolly" aria-hidden="true">
+                            <p class="valueTitle">Express Shipping</p>
+                            <p class="newsletterCopy">Sed gravida eu ac aliquam pellentesque pharetra pharetra.</p>
+                        </div> <!-- end of .imgContainer-->
+                    </div> <!-- end of .guaranteeContainer-->
 
-                    <a href="#" class="items blue">
-                        <img src="./assets/ocean-trio.jpg" alt="Wooden ocean animal toys">
-                        <h4>Ocean</h4>
-                        <p>Adorable aquatic characters</p>
-                    </a>
+                    <div class="guaranteeContainer">
+                        <div class="imgContainer">
+                            <img src="./assets/credit-card.svg" alt="A credit card" aria-hidden="true">
+                            <p class="valueTitle">Money-Back Guarantee</p>
+                            <p class="newsletterCopy">Sed gravida eu ac aliquam pellentesque pharetra pharetra.</p>
+                        </div> <!-- end of .imgContainer -->
+                    </div> <!-- end of .guaranteeContainer-->
 
-                    <a href="#" class="items green">
-                        <img src="./assets/dinos.jpg" alt="Wooden Dinosaur Toys">
-                        <h4>Dinos</h4>
-                        <p>Meet these Prehistoric Pals</p>
-                    </a>
+                    <div class="guaranteeContainer">
+                        <div class="imgContainer">
+                            <img src="./assets/shipping.svg" alt="Return package icon" aria-hidden="true">
+                            <p class="valueTitle">Hassle-free Returns</p>
+                            <p class="newsletterCopy">Sed gravida eu ac aliquam pellentesque pharetra pharetra.</p>
+                        </div> <!-- end of .imgContainer -->
+                    </div> <!-- end of .guaranteeContainer-->
 
-                    <a href="#" class="items pink">
-                        <img src="./assets/sale.jpg" alt="">
-                        <h4>Sale</h4>
-                        <p>Act quickly and grab these bargains</p>
-                    </a>
-                </div> <!-- end of .categoryGallery-->
-            </div>
+                    <div class="guaranteeContainer">
+                        <div class="imgContainer">
+                            <img src="./assets/checkout.svg" alt="Checkout screen icon" aria-hidden="true">
+                            <p class="valueTitle">Simple Checkout</p>
+                            <p class="newsletterCopy">Sed gravida eu ac aliquam pellentesque pharetra pharetra.</p>
+                        </div> <!-- end of .imgContainer -->
+                    </div> <!-- end of .guaranteeContainer-->
+                </div> <!-- end of .shopOptions -->
+            </div> <!-- end of .wrapper -->
         </section>
 
-        <!-- Instagram gallery section -->
         <section class="gallery">
             <div class="wrapper">
                 <h5>Follow Us</h5>
